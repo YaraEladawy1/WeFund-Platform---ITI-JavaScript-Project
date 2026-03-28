@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details | WeFund</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="detail-page">
+    <header>
+        <h1>WeFund</h1>
+        <nav><a href="index.html">Back to Home</a></nav>
+    </header>
+
+    <div id="donateModal" class="modal-overlay hidden">
+        <div class="modal-window">
+            <h3>Support this Cause</h3>
+            <input type="number" id="donateAmount" placeholder="Amount ($)" style="width:100%; padding:10px; margin:20px 0;">
+            <button onclick="processDonation()" class="primary-btn">Confirm</button>
+            <button onclick="closeDonateModal()" style="background:none; border:none; margin-top:10px; cursor:pointer;">Cancel</button>
+        </div>
+    </div>
+
+    <div class="detail-container">
+        <div id="campaignDetailContent">
+            </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/campaign-details.js"></script>
+</body>
+</html>

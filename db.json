@@ -1,0 +1,432 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@site.com",
+      "password": "123456",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "name": "omar",
+      "email": "omar@gmail.com",
+      "password": "1212",
+      "role": "user",
+      "isActive": true,
+      "id": "Oh--VzyBL5M"
+    },
+    {
+      "name": "sally",
+      "email": "sally@site.com",
+      "password": "3434",
+      "role": "user",
+      "isActive": true,
+      "id": "1774624204016"
+    },
+    {
+      "name": "mona",
+      "email": "mona@gmail.com",
+      "password": "5656",
+      "role": "user",
+      "isActive": true,
+      "id": "1774624406561"
+    },
+    {
+      "name": "hany",
+      "email": "hany@gmail.com",
+      "password": "7878",
+      "role": "user",
+      "isActive": true,
+      "id": "1774624545874"
+    },
+    {
+      "name": "amira",
+      "email": "amira@gmail.com",
+      "pass": "55555",
+      "role": "user",
+      "isActive": true,
+      "id": "CDuuGtN"
+    },
+    {
+      "name": "nnn",
+      "email": "nnn@gmail.com",
+      "pass": "5555",
+      "role": "user",
+      "isActive": true,
+      "id": "Cczn3Io"
+    },
+    {
+      "name": "uu",
+      "email": "uu@gmail.com",
+      "pass": "4444",
+      "role": "user",
+      "isActive": true,
+      "id": "qchwcG8"
+    },
+    {
+      "name": "yyyyyy",
+      "email": "jjj@gmail.com",
+      "pass": "888888888888",
+      "role": "user",
+      "isActive": true,
+      "id": "BnS7_Bv"
+    },
+    {
+      "name": "kkk",
+      "email": "kkk@gmail.com",
+      "pass": "555",
+      "role": "user",
+      "isActive": true,
+      "id": "VajN5Ek"
+    },
+    {
+      "name": "jjjj",
+      "email": "jj@gmail.com",
+      "pass": "666",
+      "role": "user",
+      "isActive": true,
+      "id": "x350rJa"
+    },
+    {
+      "name": "mm",
+      "email": "mm@gmail.com",
+      "pass": "9999",
+      "role": "user",
+      "id": "-VeCZxpl_1Y"
+    },
+    {
+      "name": "kl",
+      "email": "hlk@gmail.com",
+      "pass": "45875",
+      "role": "user",
+      "id": "xmXal-IkaLM"
+    },
+    {
+      "name": "qwe",
+      "email": "asd@gmail.com",
+      "pass": "45268",
+      "role": "user",
+      "isActive": true,
+      "id": "A_KCj1Tma3A"
+    },
+    {
+      "name": "jjjl",
+      "email": "jjjl@gmail.com",
+      "pass": "78965",
+      "role": "user",
+      "id": "Ke6TWlvWe2s"
+    },
+    {
+      "name": "ushr",
+      "email": "aksjncih@gmail.com",
+      "pass": "12756",
+      "role": "user",
+      "id": "rWRXHj--rkk"
+    },
+    {
+      "name": "ojncj",
+      "email": "dicmjo@gmail.com",
+      "pass": "36958",
+      "role": "user",
+      "id": "V_JJcVUmiIA"
+    },
+    {
+      "name": "jdncjnf",
+      "email": "kemxojwne@hmail.com",
+      "pass": "4115115",
+      "role": "user",
+      "id": "oMNh_Lyz3x4"
+    },
+    {
+      "name": "kmsxjn",
+      "email": "xishbb@gmail.com",
+      "pass": "44984+",
+      "role": "user",
+      "isActive": true,
+      "id": "16iLzZrF9dQ"
+    },
+    {
+      "name": "mfnuie",
+      "email": "uqbxu@gmail.com",
+      "pass": "4845165",
+      "role": "user",
+      "isActive": true,
+      "id": "3yzPxiss0nc"
+    },
+    {
+      "name": "ksjdncpi",
+      "email": "jdfnj@gmail.com",
+      "pass": "4883666",
+      "role": "user",
+      "id": "RYdet-h4K08"
+    },
+    {
+      "name": "kmimfdsa",
+      "email": "idkcnjid@gmail.com",
+      "pass": "75844",
+      "role": "user",
+      "isActive": true,
+      "id": "R4LozM3csUk"
+    },
+    {
+      "name": "mmmk",
+      "email": "mmmk@gmail.com",
+      "pass": "78412",
+      "role": "user",
+      "isActive": true,
+      "id": "Q0-zS-aLG6s"
+    },
+    {
+      "name": "jdijonm",
+      "email": "qlwm@gmail.com",
+      "pass": "4288888",
+      "role": "user",
+      "id": "5N0YcW-nNQ4"
+    },
+    {
+      "name": "haurr",
+      "email": "xaflck@gmail.com",
+      "pass": "4511111",
+      "role": "user",
+      "id": "IvnJTds6ZV8"
+    },
+    {
+      "name": "jjjjjjj",
+      "email": "jjjjjjjjj@gmail.com",
+      "pass": "1222222222222222",
+      "role": "user",
+      "id": "Pr6CKVeMTlM"
+    },
+    {
+      "name": "mmmmmmmmm",
+      "email": "mmmmmmmmmm@gmail.com",
+      "pass": "6666666666666",
+      "role": "user",
+      "isActive": true,
+      "id": "Cq_iyHB"
+    },
+    {
+      "name": "vvvvvvvv",
+      "email": "vvvvvvvv@gmail.com",
+      "pass": "99999999999999",
+      "role": "user",
+      "id": "NJOwjvz"
+    },
+    {
+      "name": "njnd imcown",
+      "email": "isiomwim@gmail.com",
+      "pass": "4444444444",
+      "role": "user",
+      "id": "SWLZPVc"
+    },
+    {
+      "id": "1774644776322",
+      "email": "ddddddd@gmail.com",
+      "password": "222222222",
+      "name": "dddddd",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "1774644866661",
+      "email": "testuser999@example.com",
+      "password": "123456",
+      "name": "Test User",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "1774644957903",
+      "email": "hana@gmail.com",
+      "password": "3333",
+      "name": "hana",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "1774645302489",
+      "email": "karin@gmail.com",
+      "password": "55555",
+      "name": "karin",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "name": "klll",
+      "email": "klll@gmail.com",
+      "password": "6666",
+      "role": "user",
+      "isActive": true,
+      "id": "V04yMft"
+    },
+    {
+      "name": "admin",
+      "email": "admin@site.com",
+      "password": "123456",
+      "role": "user",
+      "isActive": true,
+      "id": "77e6YOi"
+    },
+    {
+      "name": "soha",
+      "email": "soha@gmail.com",
+      "password": "8888",
+      "role": "user",
+      "isActive": true,
+      "id": "YJftKXv"
+    },
+    {
+      "name": "Admin",
+      "email": "admin@site.com",
+      "password": "123456",
+      "role": "user",
+      "isActive": true,
+      "id": "NDap7GR"
+    },
+    {
+      "id": "1774693289360",
+      "email": "testuserprod@example.com",
+      "password": "secret123",
+      "name": "TestUserProd",
+      "role": "user",
+      "isActive": true
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "c1",
+      "title": "Clean Water for Villages",
+      "description": "Building sustainable water wells for rural communities to ensure safe drinking water.",
+      "goal": 8000,
+      "raised": 4555,
+      "deadline": "2026-08-15",
+      "category": "environment",
+      "image": "https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "1",
+      "isApproved": true
+    },
+    {
+      "id": "c2",
+      "title": "Laptops for Students",
+      "description": "Providing refurbished laptops to underprivileged students for remote learning.",
+      "goal": 12000,
+      "raised": 3000,
+      "deadline": "2026-09-01",
+      "category": "education",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "Oh--VzyBL5M",
+      "isApproved": true
+    },
+    {
+      "id": "c3",
+      "title": "Emergency Surgery Fund",
+      "description": "Helping families cover the costs of life-saving medical procedures.",
+      "goal": 15000,
+      "raised": 16020,
+      "deadline": "2026-05-20",
+      "category": "health",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "1",
+      "isApproved": true
+    },
+    {
+      "id": "c4",
+      "title": "Reforestation Project",
+      "description": "Planting 10,000 trees to restore local ecosystems and fight climate change.",
+      "goal": 5000,
+      "raised": 2500,
+      "deadline": "2026-11-11",
+      "category": "environment",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "Oh--VzyBL5M",
+      "isApproved": true
+    },
+    {
+      "id": "c5",
+      "title": "Community Art Center",
+      "description": "Creating a space for local artists to teach children and showcase their work.",
+      "goal": 7000,
+      "raised": 1500,
+      "deadline": "2026-10-30",
+      "category": "education",
+      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "1",
+      "isApproved": true
+    },
+    {
+      "id": "c7",
+      "title": "Solar Power for Schools",
+      "description": "Installing solar panels to provide clean energy to rural educational centers.",
+      "goal": 20000,
+      "raised": 5000,
+      "deadline": "2026-07-04",
+      "category": "environment",
+      "image": "https://images.unsplash.com/photo-1509391366360-fe5bb658582f?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "1",
+      "isApproved": true
+    },
+    {
+      "id": "c8",
+      "title": "Special Needs Playground",
+      "description": "Building an inclusive playground designed for children with physical disabilities.",
+      "goal": 9500,
+      "raised": 8900,
+      "deadline": "2026-04-15",
+      "category": "health",
+      "image": "https://images.unsplash.com/photo-1573497619124-58a67c2a71c5?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "1",
+      "isApproved": true
+    },
+    {
+      "id": "c9",
+      "title": "The Coding BootCamp",
+      "description": "Free coding classes for unemployed youth to help them find tech jobs.",
+      "goal": 10000,
+      "raised": 4200,
+      "deadline": "2026-12-15",
+      "category": "education",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1400&q=80",
+      "creatorId": "1",
+      "isApproved": true
+    },
+    {
+      "id": "c1774646508606",
+      "title": "forSchools",
+      "description": ",,,",
+      "goal": 20000,
+      "raised": 0,
+      "deadline": "2026-03-18",
+      "category": "environment",
+      "image": "https://picsum.photos/id/48/1400/788",
+      "creatorId": "V04yMft",
+      "isApproved": true
+    }
+  ],
+  "pledges": [
+    {
+      "id": "1774642743137",
+      "amount": 50,
+      "campaignId": "c1",
+      "userId": "1"
+    },
+    {
+      "id": "1774644632179",
+      "amount": 5,
+      "campaignId": "c1",
+      "userId": "1"
+    },
+    {
+      "id": "1774644803317",
+      "amount": 5000,
+      "campaignId": "c3",
+      "userId": "1774644776322"
+    },
+    {
+      "id": "1774645324446",
+      "amount": 20,
+      "campaignId": "c3",
+      "userId": "1774645302489"
+    }
+  ]
+}

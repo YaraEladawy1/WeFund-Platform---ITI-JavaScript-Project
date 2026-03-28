@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Campaigns | WeFund</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="home-page">
+<header>
+    <h1>WeFund</h1>
+    <nav>
+        <a href="campaigns.html">All Campaigns</a>
+        <a href="create-campaign.html">Create Campaign</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+</header>
+
+<section class="campaigns-section">
+    <h2 style="color:var(--primary);margin-bottom:18px;">My Campaigns</h2>
+
+    <div style="margin-bottom:24px; background:#fff; border-radius:14px; padding:16px; box-shadow:var(--shadow);">
+        <h3 style="margin-bottom:12px;">Approved Campaigns</h3>
+        <div id="approvedCampaignsGrid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;"></div>
+    </div>
+
+    <div style="margin-bottom:24px; background:#fff; border-radius:14px; padding:16px; box-shadow:var(--shadow);">
+        <h3 style="margin-bottom:12px;">Pending Campaigns</h3>
+        <div id="pendingCampaignsGrid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;"></div>
+    </div>
+</section>
+
+<script src="../js/api.js"></script>
+<script src="../js/my-campaigns.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | WeFund</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <h1>WeFund</h1>
+    <nav>
+        <a href="campaigns.html">All Campaigns</a>
+        <a href="my-campaigns.html">My Campaigns</a>
+        <a href="create-campaign.html">Create Campaign</a>
+        <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+</header>
+
+<section class="campaigns-section" style="padding-top:24px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;">
+        <div style="background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow);">
+            <h2 style="margin-bottom:12px;">Update Profile</h2>
+            <form id="profileForm">
+                <div style="margin-bottom:10px;"><input id="profileName" type="text" placeholder="Name" style="width:100%;padding:10px;"></div>
+                <div style="margin-bottom:10px;"><input id="profileEmail" type="email" placeholder="Email" style="width:100%;padding:10px;"></div>
+                <div style="margin-bottom:10px;"><input id="profilePassword" type="password" placeholder="New Password (optional)" style="width:100%;padding:10px;"></div>
+                <button class="primary-btn" type="submit">Save Profile</button>
+            </form>
+            <p id="profileMessage" style="margin-top:10px;color:#555;"></p>
+        </div>
+
+        <div style="background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow);">
+            <h2 style="margin-bottom:12px;">My Donation History</h2>
+            <div id="pledges"></div>
+        </div>
+    </div>
+
+    <div style="margin-top:22px;background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow);">
+        <h2 style="margin-bottom:12px;">My Created Campaigns (Update Option)</h2>
+        <div id="dashboardCampaigns" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;"></div>
+    </div>
+</section>
+
+<script src="../js/api.js"></script>
+<script src="../js/pledges.js"></script>
+</body>
+</html>

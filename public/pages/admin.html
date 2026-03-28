@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | WeFund</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <h1>WeFund Admin</h1>
+    <nav>
+        <a href="campaigns.html">All Campaigns</a>
+        <a href="dashboard.html">User Dashboard</a>
+        <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+</header>
+
+<section class="campaigns-section" style="padding-top:24px;">
+    <h2 style="margin-bottom:12px;">Admin Dashboard</h2>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;">
+        <button class="primary-btn" type="button" onclick="loadUsers()">Users</button>
+        <button class="primary-btn" type="button" onclick="loadCampaigns()">Campaigns</button>
+        <button class="primary-btn" type="button" onclick="loadPledges()">Pledges</button>
+    </div>
+    <div id="adminData" style="background:#fff;padding:16px;border-radius:12px;box-shadow:var(--shadow);"></div>
+</section>
+
+<script src="../js/api.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+const logoutBtn = document.getElementById('logoutBtn');
+logoutBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  localStorage.removeItem('currentUser');
+  window.location.href = 'index.html';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Campaigns | WeFund</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="home-page">
+<header>
+    <h1>WeFund</h1>
+    <nav>
+        <a href="my-campaigns.html">My Campaigns</a>
+        <a href="campaigns.html">All Campaigns</a>
+        <a href="create-campaign.html">Create Campaign</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="guest.html">Guest Page</a>
+        <a href="admin.html">Admin</a>
+        <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+</header>
+
+<section class="filter-section">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search campaigns...">
+        <select id="filterCategory">
+            <option value="all">All</option>
+            <option value="environment">Environment</option>
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="community">Community</option>
+        </select>
+    </div>
+</section>
+
+<section class="campaigns-section">
+    <div id="campaignsContainer"></div>
+</section>
+
+<script src="../js/api.js"></script>
+<script src="../js/campaigns.js"></script>
+<script>
+(function () {
+  const logoutBtn = document.getElementById('logoutBtn');
+  const userRaw = localStorage.getItem('currentUser');
+  if (!userRaw) {
+    logoutBtn.textContent = 'Login';
+    logoutBtn.href = 'login.html';
+    return;
+  }
+  logoutBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    localStorage.removeItem('currentUser');
+    window.location.href = 'index.html';
+  });
+})();
+</script>
+</body>
+</html>

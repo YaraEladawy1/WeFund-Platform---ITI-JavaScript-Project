@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest View | WeFund</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="home-page">
+<header>
+    <h1>WeFund</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="campaigns.html">All Campaigns</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="filter-section">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search approved campaigns...">
+        <select id="filterCategory">
+            <option value="all">All</option>
+            <option value="environment">Environment</option>
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="community">Community</option>
+        </select>
+    </div>
+</section>
+
+<section class="campaigns-section">
+    <div style="text-align:center;color:#555;margin-bottom:16px;">Guest mode: you can browse approved campaigns. Login to donate or create campaigns.</div>
+    <div id="campaignsContainer"></div>
+</section>
+
+<script src="../js/api.js"></script>
+<script src="../js/campaigns.js"></script>
+</body>
+</html>

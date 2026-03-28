@@ -1,0 +1,260 @@
+/* --- 1. GLOBAL VARIABLES & RESET --- */
+:root {
+    --primary: #023047;
+    --accent: #06d6a0;
+    --bg-light: #f8fbfd;
+    --text-dark: #2b2d42;
+    --text-muted: #6c757d;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+
+/* --- 2. SHARED COMPONENTS --- */
+header { 
+    display: flex; justify-content: space-between; align-items: center; 
+    padding: 15px 8%; background: var(--white); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.03); 
+}
+header h1 { color: var(--primary); font-size: 1.8rem; }
+nav a { margin-left: 25px; text-decoration: none; color: var(--text-dark); font-weight: 600; transition: var(--transition); }
+nav a:hover { color: var(--accent); }
+
+.primary-btn { 
+    background: var(--accent); padding: 12px 30px; border-radius: 50px; color: white; 
+    text-decoration: none; font-weight: bold; border: none; cursor: pointer; display: inline-block; text-align: center;
+}
+
+footer { background: var(--primary); color: white; padding: 40px 8%; text-align: center; margin-top: 50px; }
+
+/* --- 3. HOME & EXPLORE PAGE (id="home-page") --- */
+#home-page .hero { 
+    height: 400px; 
+    background: linear-gradient(rgba(2,48,71,0.6), rgba(2,48,71,0.6)), url("../images/hero-bg.svg") center/cover;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
+}
+#home-page .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+
+/* Fixed Filter Section */
+#home-page .filter-section {
+    padding: 30px 8%;
+    background: #fff;
+    display: flex;
+    justify-content: center; /* Centers the search box horizontally */
+}
+
+#home-page .search-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px; /* Locked width */
+}
+
+#home-page .search-container input, 
+#home-page .search-container select {
+    padding: 12px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#home-page .search-container input { flex: 2; } /* Search is wider */
+#home-page .search-container select { flex: 1; background: #f8fafc; }
+
+/* Fixed Campaign Grid */
+#home-page .campaigns-section { padding: 40px 8%; }
+#home-page #campaignsContainer { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 30px; 
+}
+
+/* Corrected Card Internal Layout */
+.card {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.card-content h3 { color: var(--primary); margin-bottom: 10px; }
+.card-content p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; flex-grow: 1; }
+
+/* --- 4. DETAILS PAGE (id="detail-page") --- */
+#detail-page .detail-container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+#detail-page .detail-header-wrapper {
+    display: flex; gap: 40px; background: white; padding: 40px; border-radius: 30px; box-shadow: var(--shadow); align-items: flex-start;
+}
+#detail-page .detail-banner-img { width: 50%; height: 450px; object-fit: cover; border-radius: 20px; }
+#detail-page .detail-info-side { width: 50%; }
+
+/* Progress Bar */
+.progress-widget { margin: 25px 0; }
+.progress-track { width: 100%; height: 10px; background: #e2e8f0; border-radius: 10px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); transition: width 1s ease; }
+
+/* --- 5. MODALS & UTILS --- */
+.modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7); 
+    display: flex; justify-content: center; align-items: center; z-index: 2000;
+}
+.modal-window { background: white; padding: 40px; border-radius: 20px; width: 90%; max-width: 450px; text-align: center; }
+.hidden { display: none !important; }
+.status-badge { padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; display: inline-block; }
+.approved { background: #d1fae5; color: #06d6a0; }
+
+/* --- 6. RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    #detail-page .detail-header-wrapper { flex-direction: column; }
+    #detail-page .detail-banner-img, #detail-page .detail-info-side { width: 100%; height: auto; }
+    #home-page .search-container { flex-direction: column; }
+}
+
+/* --- HOW IT WORKS SECTION --- */
+.how-it-works {
+    padding: 80px 8%;
+    background: var(--white);
+    text-align: center;
+}
+
+.section-title { margin-bottom: 50px; }
+.section-title h2 { color: var(--primary); font-size: 2.5rem; }
+.section-title p { color: var(--text-muted); }
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.step-card {
+    padding: 40px;
+    background: var(--bg-light);
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.step-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); }
+
+.step-icon {
+    width: 60px; height: 60px;
+    background: var(--accent);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+/* --- FOOTER STYLES --- */
+.main-footer {
+    background: var(--primary);
+    color: white;
+    padding: 60px 8% 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-brand h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--accent); }
+.footer-links h4, .footer-contact h4 { margin-bottom: 20px; color: var(--white); }
+.footer-links ul { list-style: none; }
+.footer-links ul li { margin-bottom: 10px; }
+.footer-links a { color: #adb5bd; text-decoration: none; transition: 0.3s; }
+.footer-links a:hover { color: var(--accent); }
+
+.footer-bottom { padding-top: 20px; text-align: center; color: #adb5bd; font-size: 0.9rem; }
+
+/* --- AUTH PAGE ALIGNMENT FIX --- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* Centers form between header and footer */
+}
+
+/* --- AUTH PAGE LAYOUT --- */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Centers the box vertically */
+    padding: 20px;
+}
+
+.auth-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 450px; /* Prevents the form from being too wide */
+    text-align: center;
+}
+
+.auth-card h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.auth-card p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+/* Form Elements */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.auth-form input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.1);
+}
+
+.auth-form .primary-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.auth-footer a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
